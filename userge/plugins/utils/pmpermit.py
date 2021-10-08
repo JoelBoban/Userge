@@ -29,8 +29,8 @@ noPmMessage = bk_noPmMessage =  client.send_video(
                                 chat_id=message.chat.id,
                                 video=video
                                  )
-                                ("Hello {fname} this is an automated message\n"
-                                "Please wait until you get approved to direct message "
+                                ("Hey👋 {fname} \n"
+                                "Wait for Joel to see this message or use @ray_mathews_bot to msg my Joel"
                                 "And please dont spam until then ")
 blocked_message = bk_blocked_message = "**You were automatically blocked**"
 
