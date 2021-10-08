@@ -20,11 +20,16 @@ from userge.utils import SafeDict
 CHANNEL = userge.getCLogger(__name__)
 SAVED_SETTINGS = get_collection("CONFIGS")
 ALLOWED_COLLECTION = get_collection("PM_PERMIT")
+video = https://telegra.ph/file/5218756bdc1e4ab837198.mp4
 
 pmCounter: Dict[int, int] = {}
 _IS_INLINE = True
 allowAllFilter = filters.create(lambda _, __, ___: Config.ALLOW_ALL_PMS)
-noPmMessage = bk_noPmMessage = ("Hello {fname} this is an automated message\n"
+noPmMessage = bk_noPmMessage =  client.send_video(
+                                chat_id=message.chat.id,
+                                video=video
+                                 )
+                                ("Hello {fname} this is an automated message\n"
                                 "Please wait until you get approved to direct message "
                                 "And please dont spam until then ")
 blocked_message = bk_blocked_message = "**You were automatically blocked**"
